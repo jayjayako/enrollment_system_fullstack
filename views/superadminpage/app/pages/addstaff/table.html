@@ -1,0 +1,23 @@
+<div class="outertbl2" style="height: 90%">
+  <div id="scrollidtbl_addstaff" class="outertbl1">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>USERNAME</th>
+        </tr>
+      </thead>
+      <template id="table_tbodytmplt_addstaff">
+        <tr onclick="addnewstaffvar.getspecificstaff(this)">
+          <td>${myresult.allresults[i].id}</td>
+          <td>
+            ${myresult.allresults[i].lastname}&nbsp;${myresult.allresults[i].firstname}
+          </td>
+          <td>${myresult.allresults[i].username}</td>
+        </tr>
+      </template>
+      <tbody id="table_tbody_addstaff"></tbody>
+    </table>
+  </div>
+</div>

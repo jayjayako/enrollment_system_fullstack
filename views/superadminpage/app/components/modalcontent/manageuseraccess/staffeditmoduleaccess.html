@@ -1,0 +1,140 @@
+<div class="fullwidth fullheight flexbox">
+  <div class="modaladdstaff_editmoduleaccess modal-content">
+    <div class="modal-header">
+      <span
+        class="close"
+        onclick="
+          closemodal('1ststackmodalid')
+          "
+        >&times;</span
+      >
+      <h3>Staff Module Access</h3>
+    </div>
+    <div class="modal-body fullwidth fullheight">
+      <h4>Positions</h4>
+      <div
+        class="fullwidth"
+        style="height: 20%"
+        id="manageuseraccstaffmodalmodulepositiondivlist">
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid1">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid1" />
+            <div class="checkbox__box"></div>
+            Registrar
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid2">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid2" />
+            <div class="checkbox__box"></div>
+            Accounting
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid3">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid3" />
+            <div class="checkbox__box"></div>
+            Cashier
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid4">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid4" />
+            <div class="checkbox__box"></div>
+            Enlistment
+          </label>
+        </div>
+      </div>
+      <h4>Other Modules</h4>
+      <div
+        class="fullwidth"
+        style="height: 48%"
+        id="manageuseraccstaffmodalmoduleotherdivlist">
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid5">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid5" />
+            <div class="checkbox__box"></div>
+            Audit Trail
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid6">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid6" />
+            <div class="checkbox__box"></div>
+            Manage Student
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="manageuserstaffcheckboxid7">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="manageuserstaffcheckboxid7" />
+            <div class="checkbox__box"></div>
+            Reports
+          </label>
+        </div>
+        <h4>School Level</h4>
+        <div class="fullwidth">
+          <select
+            class="dropdowndes1"
+            id="mangeuseraccschoollevel"
+            onchange="manageuseraccessvar.displayspecificyearlevel()"></select>
+        </div>
+        <h4>Year Level</h4>
+        <div class="fullwidth">
+          <select
+            class="dropdowndes1"
+            id="mangeuseraccyearlevel"
+            onchange="manageuseraccessvar.displayspecificsection()"></select>
+        </div>
+        <h4>Section</h4>
+        <div class="fullwidth">
+          <select class="dropdowndes1" id="mangeuseraccsection"></select>
+        </div>
+        <h4>Accessibility</h4>
+        <div class="fullwidth">
+          <select class="dropdowndes1" id="manageuseraccaccessibility">
+            <option>all for one</option>
+            <option>staffs only</option>
+            <option>specific user</option>
+          </select>
+        </div>
+      </div>
+      <div class="fullwidth flexbox" style="margin-top: 10px">
+        <button class="btndes4" onclick="manageuseraccessvar.loadstaffmodule()">
+          SAVE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  manageuseraccessvar.displayallcurriculum();
+  manageuseraccessvar.displaystaffmodule();
+</script>

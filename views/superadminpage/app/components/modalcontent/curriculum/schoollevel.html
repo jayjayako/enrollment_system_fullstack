@@ -1,0 +1,40 @@
+<div class="fullwidth fullheight flexbox">
+  <div class="modalschoollevel modal-content">
+    <div class="modal-header">
+      <span
+        class="close"
+        onclick="
+      closemodal('1ststackmodalid')
+      "
+        >&times;</span
+      >
+      <h3>School Level</h3>
+    </div>
+    <div class="modal-body fullwidth">
+      <div class="fullwidth fullheight flexbox flexdirec-col">
+        <input
+          class="inputtextdes3"
+          type="text"
+          id="modalcurriculum_inputschoollevelid" />
+        <select
+          class="dropdowndes1"
+          id="modalcurriculum_schoollevelid"></select>
+        <button
+          class="btndes4"
+          style="margin-top: 10px"
+          onclick="curriculumvar.addnewschoollevel()">
+          SAVE
+        </button>
+        <button
+          class="btndes4"
+          style="margin-top: 10px"
+          onclick="curriculumvar.deleteschoollevel()">
+          DELETE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  curriculumvar.displayschoollevel();
+</script>

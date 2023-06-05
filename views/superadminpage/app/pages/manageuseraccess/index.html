@@ -1,0 +1,111 @@
+<div class="fullwidth fullheight manageuseraccessgrid">
+  <div class="fullwidth fullheight flexbox flexdirec-row maingridcont item1">
+    <div class="fullwidth flexbox">
+      <h3>Select User Type</h3>
+    </div>
+    <div class="fullwidth flexbox">
+      <select
+        class="dropdowndes1"
+        style="width: 45%"
+        id="manageuseraccesspositionid"
+        onchange="
+        if(document.getElementById('manageuseraccesspositionid').value=='Admin'){
+          manageuseraccessvar.displayadmin()
+        }
+        if(document.getElementById('manageuseraccesspositionid').value=='Staff'){
+          manageuseraccessvar.displaystaff()
+        }
+        ">
+        <option>Admin</option>
+        <option>Staff</option>
+      </select>
+    </div>
+  </div>
+  <div
+    class="fullwidth fullheight flexbox flexdirec-col maingridcont item2"
+    style="padding: 5px">
+    <fieldset
+      class="fullwidth fullheight flexbox flexdirec-row"
+      style="border-radius: 10px">
+      <legend style="border-radius: 10px; padding: 5px; margin-left: 10px">
+        USER INFORMATION
+      </legend>
+      <div class="fullwidth flexbox flexdirec-col">
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          ID Number: <span id="manageuseracciddisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          Staff Position: <span id="manageuseraccpositionsdisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          Firstname: <span id="manageuseraccfirstnamedisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          Lastname: <span id="manageuseracclastnamedisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          School Level: <span id="manageuseraccschoolleveldisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          Year Level: <span id="manageuseraccyearleveldisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          Section: <span id="manageuseraccsectiondisplay"></span>
+        </p>
+        <p class="fullwidth" style="text-align: left; padding: 3px">
+          Curriculum Status: <span id="manageuseracccurstatsdisplay"></span>
+        </p>
+      </div>
+      <div class="fullwidth"></div>
+      <div class="fullwidth">
+        <img
+          class="fullwidth"
+          src="./img/defaultimg.png"
+          style="border-radius: 10px; height: 170px; width: 170px" />
+      </div>
+    </fieldset>
+    <div class="fullwidth fullheight flexbox flexdirec-row" style="height: 20%">
+      <div
+        class="fullwidth"
+        style="width: 30%; padding-top: 5px; margin-right: 25%">
+        <button
+          onclick="
+          if(document.getElementById('manageuseraccesspositionid').value=='Admin'){
+            openmodal('1ststackmodalid','app/components/modalcontent/manageuseraccess/admineditmoduleaccess.html')
+          }
+          if(document.getElementById('manageuseraccesspositionid').value=='Staff'){
+            openmodal('1ststackmodalid','app/components/modalcontent/manageuseraccess/staffeditmoduleaccess.html')
+          }
+          "
+          class="btndes4">
+          EDIT MODULE
+        </button>
+      </div>
+      <div
+        class="fullwidth"
+        style="width: 30%; padding-top: 5px; margin-left: 25%">
+        <button
+          onclick="
+          if(document.getElementById('manageuseraccesspositionid').value=='Admin'){
+            manageuseraccessvar.updateadminmodule()
+          }
+          if(document.getElementById('manageuseraccesspositionid').value=='Staff'){
+            manageuseraccessvar.updatestaffmodule()
+          }
+          "
+          class="btndes4">
+          UPDATE MODULE
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    HTMLINCLUDE="manageuseraccesstable"
+    class="fullwidth fullheight maingridcont item3"
+    style="padding: 5px; height: 220px"></div>
+</div>
+
+<script>
+  includehtml("manageuseraccesstable", "app/pages/manageuseraccess/table.html");
+  manageuseraccessvar.displayadmin();
+</script>

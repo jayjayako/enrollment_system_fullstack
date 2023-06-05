@@ -1,0 +1,23 @@
+<div class="outertbl2" style="height: 90%">
+  <div id="scrollidtbl_editenrolleerecords" class="outertbl1">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>USERNAME</th>
+        </tr>
+      </thead>
+      <template id="table_tbodytmplt_editenrolleerecords">
+        <tr>
+          <td>${myresult.allresults[i].id}</td>
+          <td>
+            ${myresult.allresults[i].lastname}&nbsp;${myresult.allresults[i].firstname}
+          </td>
+          <td>${myresult.allresults[i].username}</td>
+        </tr>
+      </template>
+      <tbody id="table_tbody_editenrolleerecords"></tbody>
+    </table>
+  </div>
+</div>

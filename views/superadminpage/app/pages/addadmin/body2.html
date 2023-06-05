@@ -1,0 +1,31 @@
+<div class="addnewadminimgcon">
+  <input
+    type="file"
+    id="addadminpicture"
+    accept="image/x-png,image/gif,image/jpeg"
+    onchange="addnewadminvar.loadFile(event)" />
+  <img
+    id="addadminprofileimage"
+    class="addnewadminimgdefault"
+    src="./img/defaultimg.png" />
+  <img
+    class="addnewadminimghover"
+    src="./img/placeholder.jpg"
+    onclick="addnewadminvar.uploadprofilepic()" />
+</div>
+
+<div class="fullwidth" style="padding-top: 7px">
+  <button class="btndes4" onclick="addnewadminvar.addnew()">ADD NEW</button>
+</div>
+<div class="fullwidth" style="padding-top: 7px">
+  <button
+    onclick="
+  openmodal('1ststackmodalid','app/components/modalcontent/addadmin/editmoduleaccess.html')
+"
+    class="btndes4">
+    EDIT MODULE
+  </button>
+</div>
+<div class="fullwidth" style="padding-top: 7px">
+  <button class="btndes4" onclick="addnewadminvar.deletenow()">DELETE</button>
+</div>

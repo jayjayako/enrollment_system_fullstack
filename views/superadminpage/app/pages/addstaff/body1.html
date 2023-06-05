@@ -1,0 +1,85 @@
+<div class="fullwidth fullheight" style="padding: 5px">
+  <fieldset class="fullwidth fullheight" style="border-radius: 10px">
+    <legend style="border-radius: 10px; padding: 5px; margin-left: 10px">
+      USER INFORMATION
+    </legend>
+    <div
+      class="fullwidth flexbox flexdirec-row"
+      style="padding-left: 20px; padding-right: 20px">
+      <div
+        style="padding-right: 10px; padding-left: 10px"
+        class="fullwidth flexbox flexdirec-col"
+        style="text-align: left">
+        <label class="fullwidth" for="addstafflastnametext">Last Name</label>
+        <input class="inputtextdes3" type="text" id="addstafflastnametext" />
+      </div>
+      <div
+        style="padding-right: 10px; padding-left: 10px"
+        class="fullwidth flexbox flexdirec-col"
+        style="text-align: left">
+        <label class="fullwidth" for="addstafffirstnametext">First Name</label>
+        <input class="inputtextdes3" type="text" id="addstafffirstnametext" />
+      </div>
+    </div>
+    <div
+      class="fullwidth flexbox flexdirec-row"
+      style="padding-left: 20px; padding-right: 20px">
+      <div
+        style="padding-right: 10px; padding-left: 10px"
+        class="fullwidth flexbox flexdirec-col"
+        style="text-align: left">
+        <label class="fullwidth" for="addstaffusernametext">Username</label>
+        <input class="inputtextdes3" type="text" id="addstaffusernametext" />
+      </div>
+      <div
+        style="padding-right: 10px; padding-left: 10px"
+        class="fullwidth flexbox flexdirec-col"
+        style="text-align: left">
+        <label class="fullwidth" for="addstaffpasswordtext">Password</label>
+        <input class="inputtextdes3" type="text" id="addstaffpasswordtext" />
+      </div>
+    </div>
+    <div
+      class="fullwidth flexbox flexdirec-row"
+      style="padding-left: 20px; padding-right: 20px">
+      <div
+        style="padding-right: 10px; padding-left: 10px"
+        class="fullwidth flexbox flexdirec-col"
+        style="text-align: left">
+        <label class="fullwidth" for="addstaffemailtext">Email</label>
+        <input class="inputtextdes3" type="text" id="addstaffemailtext" />
+      </div>
+    </div>
+    <div
+      class="fullwidth flexbox flexdirec-row"
+      style="padding-left: 5%; padding-right: 5%">
+      <h4>Staff&nbsp;Positions&nbsp;</h4>
+      <p class="fullwidth" id="addstaffdisplaymodulepositionid">
+        ${allpositions}
+      </p>
+    </div>
+    <h4 class="fullwidth" style="text-align: center">Staff Module Access</h4>
+    <div class="fullwidth" style="overflow-y: scroll; height: 23%">
+      <ul id="addstaffdisplaymoduleid">
+        <li>
+          <div class="innerlist1">
+            <p class="fullwidth">Audit Trail</p>
+            <p class="fullwidth">${audittrail}</p>
+          </div>
+        </li>
+        <li>
+          <div class="innerlist1">
+            <p class="fullwidth">Manage Student</p>
+            <p class="fullwidth">${managestudent}</p>
+          </div>
+        </li>
+        <li>
+          <div class="innerlist1">
+            <p class="fullwidth">Reports</p>
+            <p class="fullwidth">${reports}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+</div>

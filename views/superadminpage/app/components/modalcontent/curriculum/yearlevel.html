@@ -1,0 +1,42 @@
+<div class="fullwidth fullheight flexbox">
+  <div class="modalyearlevel modal-content">
+    <div class="modal-header">
+      <span
+        class="close"
+        onclick="
+      closemodal('1ststackmodalid')
+      "
+        >&times;</span
+      >
+      <h3>Year Level</h3>
+    </div>
+    <div class="modal-body fullwidth">
+      <div class="fullwidth fullheight flexbox flexdirec-col">
+        <select
+          class="dropdowndes1"
+          id="modalcurriculum_schoollevelid"
+          onchange="curriculumvar.displayspecificyearlevel()"></select>
+        <input
+          class="inputtextdes3"
+          type="text"
+          id="modalcurriculum_inputyearlevelid" />
+        <select class="dropdowndes1" id="modalcurriculum_yearlevelid"></select>
+        <button
+          class="btndes4"
+          style="margin-top: 10px"
+          onclick="curriculumvar.addnewyearlevel()">
+          SAVE
+        </button>
+        <button
+          class="btndes4"
+          style="margin-top: 10px"
+          onclick="curriculumvar.deleteyearlevel()">
+          DELETE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  curriculumvar.displayyearlevel();
+</script>

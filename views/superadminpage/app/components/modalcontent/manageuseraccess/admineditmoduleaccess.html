@@ -1,0 +1,178 @@
+<div class="fullwidth fullheight flexbox">
+  <div class="modaladdadmin_editmoduleaccess modal-content">
+    <div class="modal-header">
+      <span
+        class="close"
+        onclick="
+          closemodal('1ststackmodalid')
+          "
+        >&times;</span
+      >
+      <h3>Admin Module Access</h3>
+    </div>
+    <div class="modal-body fullwidth fullheight">
+      <div
+        class="fullwidth"
+        style="height: 65%"
+        id="manageuseraccadminmodalmoduledivlist">
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid1">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid1" />
+            <div class="checkbox__box"></div>
+            Add Staff
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid2">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid2" />
+            <div class="checkbox__box"></div>
+            Audit Trail
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid3">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid3" />
+            <div class="checkbox__box"></div>
+            Manage Student
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid4">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid4" />
+            <div class="checkbox__box"></div>
+            Curriculum
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid5">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid5" />
+            <div class="checkbox__box"></div>
+            Manage User Access
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid6">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid6" />
+            <div class="checkbox__box"></div>
+            Registrar
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid7">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid7" />
+            <div class="checkbox__box"></div>
+            Accounting
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid8">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid8" />
+            <div class="checkbox__box"></div>
+            Cashier
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid9">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid9" />
+            <div class="checkbox__box"></div>
+            Enlistment
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid10">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid10" />
+            <div class="checkbox__box"></div>
+            Reports
+          </label>
+        </div>
+        <div class="fullwidth">
+          <label class="checkbox1" for="mangeuseradmincheckboxid11">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="mycheckboxname"
+              id="mangeuseradmincheckboxid11" />
+            <div class="checkbox__box"></div>
+            Log Year Span
+          </label>
+        </div>
+        <h4>School Level</h4>
+        <div class="fullwidth">
+          <select
+            class="dropdowndes1"
+            id="mangeuseraccschoollevel"
+            onchange="manageuseraccessvar.displayspecificyearlevel()"></select>
+        </div>
+        <h4>Year Level</h4>
+        <div class="fullwidth">
+          <select
+            class="dropdowndes1"
+            id="mangeuseraccyearlevel"
+            onchange="manageuseraccessvar.displayspecificsection()"></select>
+        </div>
+        <h4>Section</h4>
+        <div class="fullwidth">
+          <select class="dropdowndes1" id="mangeuseraccsection"></select>
+        </div>
+        <h4>Accessibility</h4>
+        <div class="fullwidth">
+          <select class="dropdowndes1" id="manageuseraccaccessibility">
+            <option>all for one</option>
+            <option>admins only</option>
+            <option>staffs only</option>
+            <option>specific user</option>
+          </select>
+        </div>
+      </div>
+      <div class="fullwidth flexbox" style="margin-top: 10px">
+        <button class="btndes4" onclick="manageuseraccessvar.loadadminmodule()">
+          SAVE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  manageuseraccessvar.displayallcurriculum();
+  manageuseraccessvar.displayadminmodule();
+</script>

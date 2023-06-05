@@ -1,0 +1,31 @@
+<div class="addnewstaffimgcon">
+  <input
+    type="file"
+    id="addstaffpicture"
+    accept="image/x-png,image/gif,image/jpeg"
+    onchange="addnewstaffvar.loadFile(event)" />
+  <img
+    id="addstaffprofileimage"
+    class="addnewstaffimgdefault"
+    src="./img/defaultimg.png" />
+  <img
+    class="addnewstaffimghover"
+    src="./img/placeholder.jpg"
+    onclick="addnewstaffvar.uploadprofilepic()" />
+</div>
+
+<div class="fullwidth" style="padding-top: 7px">
+  <button class="btndes4" onclick="addnewstaffvar.addnew()">ADD NEW</button>
+</div>
+<div class="fullwidth" style="padding-top: 7px">
+  <button
+    onclick="
+  openmodal('1ststackmodalid','app/components/modalcontent/addstaff/editmoduleaccess.html')
+"
+    class="btndes4">
+    EDIT MODULE
+  </button>
+</div>
+<div class="fullwidth" style="padding-top: 7px">
+  <button class="btndes4" onclick="addnewstaffvar.deletenow()">DELETE</button>
+</div>

@@ -1,0 +1,78 @@
+@use "../../util";
+
+.leftnavbar {
+  background-color: util.$lightBlue;
+  .logoimage {
+    height: auto;
+  }
+  p {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    color: util.$black;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+  ion-icon {
+    font-size: 25px;
+    color: util.$black;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+  .sidenavdes1 {
+    cursor: pointer;
+    text-align: left;
+    padding: 15px;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-right: 1px;
+
+    &:hover {
+      cursor: pointer;
+      text-align: left;
+      padding: 15px;
+      transition: 0.8s;
+      cursor: pointer;
+      background-color: util.$blueGreen;
+      border-left: 8px solid util.$violet;
+      p {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 16px;
+        color: util.$white;
+        transition: 0.8s;
+        cursor: pointer;
+      }
+      ion-icon {
+        font-size: 25px;
+        color: util.$white;
+        transition: 0.8s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sidenavbtn1 {
+    display: none;
+    &:checked {
+      + .sidenavdes1 {
+        background-color: util.$blueGreen;
+        border-left: 8px solid util.$violet;
+        transition: 0.8s;
+        cursor: pointer;
+        margin-right: 1px;
+      }
+      + .sidenavdes1 p {
+        color: util.$white;
+        transition: 0.8s;
+        cursor: pointer;
+      }
+      + .sidenavdes1 ion-icon {
+        color: util.$white;
+        transition: 0.8s;
+        cursor: pointer;
+      }
+    }
+  }
+}
